@@ -3,7 +3,11 @@
   "displayName": "Swedenborg Concordance Language",
   "description": "Syntax highlighting of Swedenborg Concordance text files",
   "version": "0.0.1",
-  "publisher": "New Christian Bible Study",
+  "publisher": "new-christian-bible-study",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/New-Christian-Bible-Study/swconcord-lang-vscode.git"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
