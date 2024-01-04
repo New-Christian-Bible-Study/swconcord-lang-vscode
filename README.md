@@ -8,8 +8,9 @@ This [Visual Studio Code language extension](https://code.visualstudio.com/api/l
 
 - Highlight many errors such as invalid abbreviations and numbers mixed with letters. _See [Known Issues](#known-issues) for limitations of this highlighting._
 
+![highlighting-sample](https://github.com/New-Christian-Bible-Study/swconcord-lang-vscode/assets/36829186/9338c5bc-5468-4c94-b0d4-7989a4c816f4)
 
-![Highlighting sample](highlighting-sample.png)
+
 
 ## Requirements
 
