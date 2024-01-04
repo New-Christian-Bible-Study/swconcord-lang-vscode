@@ -1,0 +1,26 @@
+{
+  "name": "swconcord",
+  "displayName": "Swedenborg Concordance Language",
+  "description": "Syntax highlighting of Swedenborg Concordance text files",
+  "version": "0.0.1",
+  "publisher": "New Christian Bible Study",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "swconcord",
+      "aliases": ["Swedenborg Concordance", "swconcord"],
+      "extensions": [".swconcord"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "swconcord",
+      "scopeName": "source.swconcord",
+      "path": "./syntaxes/swconcord.tmLanguage.json"
+    }]
+  }
+}

@@ -1,0 +1,105 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Swedenborg Concordance",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#references"
+		},
+		{
+			"include": "#principal_phrases"
+		},
+		{
+			"include": "#invalid"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.control.swconcord",
+					"match": "#.*"
+				}
+			]
+		},
+		"references": {
+			"patterns": [
+				{
+					"name": "ref.abbrev.swconcord",
+					"match": "@(5M|9Q|AC|AE|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|WE|WHApp|WH)"
+				},
+				{
+					"name": "ref.section.swconcord",
+					"match": "^@(--\\.|--)?"
+				},
+				{
+					"name": "ref.see.also.swconcord",
+					"match": "See"
+				}
+			]
+		},
+		"principal_phrases": {
+			"patterns": [
+				{
+					"name": "principal.phrases.swconcord",
+					"match": "^([A-Z][A-Za-z| ,]+[a-z])\\. +(?!See)([A-Z][A-Za-z| ,]+[a-z])\\.",
+					"captures": {
+						"1": {
+							"name": "principal_phrase.english.swconcord"
+						},
+						"2": {
+							"name": "principal_phrase.latin.swconcord"
+						}
+					}
+				},
+				{
+					"name": "principal.phrase.english.see.swconcord",
+					"match": "^([A-Z][A-Za-z| ,]+[a-z])\\. +(See) ([A-Za-z| ,]+[a-z])\\.",
+					"captures": {
+						"1": {
+							"name": "principal_phrase.english.swconcord"
+						},
+						"2": {
+							"name": "ref.see.also.swconcord"
+						}
+					}
+				},
+				{
+					"name": "principal_phrase_latin.swconcord",
+					"match": "[A-Z][A-Za-z| ]+[a-z]\\.$"
+				}
+			]
+		},
+		"invalid": {
+			"patterns": [
+				{
+					"name": "invalid.ref.swconcord",
+					"match": "@(?!(--|\\d+|5M|9Q|AC|AE|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|WE|WHApp|WH))\\w+"
+				},
+				{
+					"name": "invalid.char.unknown.swconcord",
+					"match": "%"
+				},
+				{
+					"name": "invalid.subsection.swconcord",
+					"match": "\\[\\]"
+				},
+				{
+					"name": "invalid.non.digit.before.digit.swconcord",
+					"match": "[^ @\\d:\\[]\\d+"
+				},
+				{
+					"name": "invalid.non.digit.after.digit.swconcord",
+					"match": "\\d+[^\\d\\.,:K \\[\\]]"
+				},
+				{
+					"name": "invalid.letter.unexpected.swconcord",
+					"match": "(\\)\\w)|(\\w\\()|(\\?\\w)"
+				}
+			]
+		}
+	},
+	"scopeName": "source.swconcord"
+}
