@@ -2,7 +2,8 @@
   "name": "swconcord",
   "displayName": "Swedenborg Concordance Language",
   "description": "Syntax highlighting of Swedenborg Concordance text files",
-  "version": "0.0.1",
+  "icon": "icon.png",
+  "version": "0.0.2",
   "publisher": "new-christian-bible-study",
   "repository": {
     "type": "git",

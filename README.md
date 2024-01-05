@@ -27,6 +27,10 @@ This extension is intended to be used with the concordance directory opened in V
 
 Initial release.
 
+### 0.0.2
+
+Include extension icon.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
