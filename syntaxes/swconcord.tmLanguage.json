@@ -33,12 +33,7 @@
 				{
 					"name": "ref.section.swconcord",
 					"match": "^@(--\\.|--)?"
-				},
-				{
-					"name": "ref.see.also.swconcord",
-					"match": "See"
-				}
-			]
+				}			]
 		},
 		"principal_phrases": {
 			"patterns": [
@@ -68,7 +63,7 @@
 				},
 				{
 					"name": "invalid.non.digit.after.digit.swconcord",
-					"match": "\\d+[^\\d\\.,:K \\[\\]]"
+					"match": "\\d+[^\\d\\.,:K \\[\\]\\)]"
 				},
 				{
 					"name": "invalid.letter.unexpected.swconcord",
