@@ -63,8 +63,12 @@
 					"match": "\\[\\]"
 				},
 				{
+					"name": "invalid.subsection.too.large.swconcord",
+					"match": "\\[\\d{3}\\]"
+				},
+				{
 					"name": "invalid.non.digit.before.digit.swconcord",
-					"match": "[^ @\\d:\\[]\\d+"
+					"match": "[^ @\\d:\\(\\[]\\d+"
 				},
 				{
 					"name": "invalid.non.digit.after.digit.swconcord",
