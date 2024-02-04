@@ -16,16 +16,56 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "swconcord",
-      "aliases": ["Swedenborg Concordance", "swconcord"],
-      "extensions": [".swconcord"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "swconcord",
-      "scopeName": "source.swconcord",
-      "path": "./syntaxes/swconcord.tmLanguage.json"
-    }]
+    "languages": [ {
+        "id": "swconcord",
+        "aliases": [ "Swedenborg Concordance", "swconcord" ],
+        "extensions": [ ".swconcord" ],
+        "configuration": "./language-configuration.json"
+      } ],
+    "grammars": [ {
+        "language": "swconcord",
+        "scopeName": "source.swconcord",
+        "path": "./syntaxes/swconcord.tmLanguage.json"
+      } ],
+    "configurationDefaults": {
+      "editor.tokenColorCustomizations": {
+        "textMateRules": [
+          {
+            "scope": [
+              "comment.control.swconcord"
+            ],
+            "settings": {
+              "foreground": "#11e88b"
+            }
+          },
+          {
+            "scope": [
+              "principal.phrase.line.swconcord"
+            ],
+            "settings": {
+              "fontStyle": "underline"
+            }
+          },
+          {
+            "scope": [
+              "ref.abbrev"
+            ],
+            "settings": {
+              "fontStyle": "bold",
+              "foreground": "#1180e8"
+            }
+          },
+          {
+            "scope": [
+              "ref.section"
+            ],
+            "settings": {
+              "fontStyle": "bold",
+              "foreground": "#1180e8"
+            }
+          }
+        ]
+      }
+    }
   }
 }
