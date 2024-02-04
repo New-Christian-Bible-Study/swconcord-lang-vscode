@@ -48,7 +48,7 @@
           },
           {
             "scope": [
-              "ref.abbrev"
+              "ref.abbrev.swconcord"
             ],
             "settings": {
               "fontStyle": "bold",
@@ -57,7 +57,7 @@
           },
           {
             "scope": [
-              "ref.section"
+              "ref.section.swconcord"
             ],
             "settings": {
               "fontStyle": "bold",
