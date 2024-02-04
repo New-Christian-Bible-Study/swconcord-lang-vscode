@@ -57,6 +57,15 @@
           },
           {
             "scope": [
+              "ref.section.swconcord"
+            ],
+            "settings": {
+              "fontStyle": "bold",
+              "foreground": "#1180e8"
+            }
+          },
+          {
+            "scope": [
               "ref.section.previous.swconcord"
             ],
             "settings": {

@@ -31,6 +31,10 @@
 					"match": "@(5M|9Q|AC|AE|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|WE|WHApp|WH)"
 				},
 				{
+					"name": "ref.section.swconcord",
+					"match": "^@\\d+"
+				},
+				{
 					"name": "ref.section.previous.swconcord",
 					"match": "^@(--\\.|--)?"
 				}
