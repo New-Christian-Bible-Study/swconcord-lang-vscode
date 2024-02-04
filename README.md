@@ -31,6 +31,12 @@ Initial release.
 
 Include extension icon.
 
+### 0.0.3
+
+- Don't attempt show English words in bold and Latin words in italic which can fail in some cases. Instead, underscore principal phrase lines.
+- Fixed some numbers inappropriately marked as invalid.
+- Included syntax highlighting rules in extension.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
