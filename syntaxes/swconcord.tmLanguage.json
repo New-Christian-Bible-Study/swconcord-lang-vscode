@@ -59,7 +59,7 @@
 					"match": "%"
 				},
 				{
-					"name": "invalid.subsection.swconcord",
+					"name": "invalid.subsection.empty.swconcord",
 					"match": "\\[\\]"
 				},
 				{
