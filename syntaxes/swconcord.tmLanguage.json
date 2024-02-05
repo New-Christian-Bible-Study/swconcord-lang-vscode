@@ -19,6 +19,18 @@
 		"comments": {
 			"patterns": [
 				{
+					"name": "comment.problem.swconcord",
+					"match": "(?i)(#problem)( .*)",
+					"captures": {
+						"1": {
+							"name": "comment.problem.keyword.swconcord"
+						},
+						"2": {
+							"name": "comment.problem.description.swconcord"
+						}
+					}
+				},
+				{
 					"name": "comment.control.swconcord",
 					"match": "#.*"
 				}

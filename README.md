@@ -35,6 +35,10 @@ Include extension icon.
 - Fixed some numbers inappropriately marked as invalid.
 - Included syntax highlighting rules in extension.
 
+### 0.0.4
+
+Syntax highlight #problem comments to help make stand out.
+
 ## Extension Development
 
 Development of the extension can be done as follows:

@@ -3,7 +3,7 @@
   "displayName": "Swedenborg Concordance Language",
   "description": "Syntax highlighting of Swedenborg Concordance text files",
   "icon": "icon.png",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "new-christian-bible-study",
   "repository": {
     "type": "git",
@@ -33,6 +33,23 @@
           {
             "scope": [
               "comment.control.swconcord"
+            ],
+            "settings": {
+              "foreground": "#11e88b"
+            }
+          },
+          {
+            "scope": [
+              "comment.problem.keyword.swconcord"
+            ],
+            "settings": {
+              "fontStyle": "bold",
+              "foreground": "#e81111"
+            }
+          },
+          {
+            "scope": [
+              "comment.problem.description.swconcord"
             ],
             "settings": {
               "foreground": "#11e88b"
