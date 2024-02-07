@@ -39,6 +39,10 @@ Include extension icon.
 
 Syntax highlight #problem comments to help make stand out.
 
+### 0.0.5
+
+Made valid and invalid patterns checks more robust.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
