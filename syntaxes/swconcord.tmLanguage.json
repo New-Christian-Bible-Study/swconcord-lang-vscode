@@ -3,6 +3,9 @@
 	"name": "Swedenborg Concordance",
 	"patterns": [
 		{
+			"include": "#invalid"
+		},
+		{
 			"include": "#comments"
 		},
 		{
@@ -10,9 +13,6 @@
 		},
 		{
 			"include": "#principal_phrases"
-		},
-		{
-			"include": "#invalid"
 		}
 	],
 	"repository": {
@@ -44,11 +44,11 @@
 				},
 				{
 					"name": "ref.section.swconcord",
-					"match": "^@\\d+"
+					"match": "^@\\d+(\\.| |\\[\\d+\\]|\\[end\\])"
 				},
 				{
 					"name": "ref.section.previous.swconcord",
-					"match": "^@(--\\.|--)?"
+					"match": "^@--(\\[\\d+\\]|\\[end\\])?(\\.| )"
 				}
 			]
 		},
@@ -69,6 +69,14 @@
 				{
 					"name": "invalid.char.unknown.swconcord",
 					"match": "%"
+				},
+				{
+					"name": "invalid.char.after.at.sign.swconcord",
+					"match": "@(?!\\w|-)"
+				},
+				{
+					"name": "invalid.ref.section.swconcord",
+					"match": "@\\d+(?!(\\.| |\\[)|\\d)"
 				},
 				{
 					"name": "invalid.subsection.empty.swconcord",
