@@ -43,6 +43,10 @@ Syntax highlight #problem comments to help make stand out.
 
 Made valid and invalid patterns checks more robust.
 
+### 0.0.6
+
+Continued making valid and invalid patterns checks more robust.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
