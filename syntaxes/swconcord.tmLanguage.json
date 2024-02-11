@@ -40,15 +40,7 @@
 			"patterns": [
 				{
 					"name": "ref.abbrev.swconcord",
-					"match": "@(5M|9Q|AC|AE|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|WE|WHApp|WH)"
-				},
-				{
-					"name": "ref.section.swconcord",
-					"match": "^@\\d+(\\.| |\\[\\d+\\]|\\[end\\])"
-				},
-				{
-					"name": "ref.section.previous.swconcord",
-					"match": "^@--(\\[\\d+\\]|\\[end\\])?(\\.| )"
+					"match": "@(--|\\d+|(5M|9Q|AC|AE|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|WE|WHApp|WH) \\d+)(\\[(\\d+|end)\\])?( |\\.|,)"
 				}
 			]
 		},
@@ -63,8 +55,12 @@
 		"invalid": {
 			"patterns": [
 				{
+					"name": "invalid.subsection.empty.swconcord",
+					"match": "\\d+\\[\\]"
+				},
+				{
 					"name": "invalid.ref.swconcord",
-					"match": "@(?!(--|\\d+|5M|9Q|AC|AE|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|WE|WHApp|WH))\\w+"
+					"match": "@(?!(--|\\d+|(5M|9Q|AC|AE|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|WE|WHApp|WH) \\d+)(\\[(\\d+|end)\\])?( |\\.|,)).*? "
 				},
 				{
 					"name": "invalid.char.unknown.swconcord",
@@ -73,14 +69,6 @@
 				{
 					"name": "invalid.char.after.at.sign.swconcord",
 					"match": "@(?!\\w|-)"
-				},
-				{
-					"name": "invalid.ref.section.swconcord",
-					"match": "@\\d+(?!(\\.| |\\[)|\\d)"
-				},
-				{
-					"name": "invalid.subsection.empty.swconcord",
-					"match": "\\[\\]"
 				},
 				{
 					"name": "invalid.subsection.too.large.swconcord",
