@@ -47,6 +47,13 @@ Made valid and invalid patterns checks more robust.
 
 Continued making valid and invalid patterns checks more robust.
 
+### 0.0.7
+
+- Allow for parenthetical footnotes like LJ 25(i)
+- Mark lines that don't begin with @ or upper case letter as invalid
+- Allow spaces between "#" and "problem" in problem comments.
+- Allow support for subsection [half]
+
 ## Extension Development
 
 Development of the extension can be done as follows:
