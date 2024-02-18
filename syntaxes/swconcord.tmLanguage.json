@@ -40,7 +40,7 @@
 			"patterns": [
 				{
 					"name": "ref.abbrev.swconcord",
-					"match": "@(--|\\d+|(5M|9Q|AC|AE|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|WE|WHApp|WH) \\d+)(\\[(\\d+|end|half)\\])?( |\\.|,)"
+					"match": "@(--|\\d+|(5M|9Q|AC|AE|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|WE|WHApp|WH) \\d+)(\\[(\\d+|end|half)\\])?(\\([a-z]{1,2}\\))?( |\\.|,)"
 				}
 			]
 		},
@@ -64,7 +64,7 @@
 				},
 				{
 					"name": "invalid.ref.swconcord",
-					"match": "@(?!(--|\\d+|(5M|9Q|AC|AE|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|WE|WHApp|WH) \\d+)(\\[(\\d+|end|half)\\])?( |\\.|,)).*? "
+					"match": "@(?!(--|\\d+|(5M|9Q|AC|AE|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|WE|WHApp|WH) \\d+)(\\[(\\d+|end|half)\\])?(\\([a-z]{1,2}\\))?( |\\.|,)).*? "
 				},
 				{
 					"name": "invalid.char.unknown.swconcord",
