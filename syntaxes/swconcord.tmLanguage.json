@@ -20,7 +20,7 @@
 			"patterns": [
 				{
 					"name": "comment.problem.swconcord",
-					"match": "(?i)(#problem)( .*)",
+					"match": "(?i)(# *problem)( .*)",
 					"captures": {
 						"1": {
 							"name": "comment.problem.keyword.swconcord"
@@ -48,12 +48,16 @@
 			"patterns": [
 				{
 					"name": "principal.phrase.line.swconcord",
-					"match": "^[^@].*$"
+					"match": "^[A-Z].*$"
 				}
 			]
 		},
 		"invalid": {
 			"patterns": [
+				{
+					"name": "invalid.line.beginning.swconcord",
+					"match": "^[^@[A-Z]#].*$"
+				},
 				{
 					"name": "invalid.subsection.empty.swconcord",
 					"match": "\\d+\\[\\]"
