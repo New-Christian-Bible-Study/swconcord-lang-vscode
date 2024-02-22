@@ -54,6 +54,12 @@ Continued making valid and invalid patterns checks more robust.
 - Allow spaces between "#" and "problem" in problem comments.
 - Allow support for subsection [half]
 
+### 0.0.8
+
+- Allow for a section range to be indicated such as @SE 988-995
+- For principal phrase lines only use English phrase as pattern so refs get highlighted on these lines
+- Use bold for principal phrase rather than underline so spelling errors stand out.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
