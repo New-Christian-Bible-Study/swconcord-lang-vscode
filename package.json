@@ -71,6 +71,15 @@
               "fontStyle": "bold",
               "foreground": "#1180e8"
             }
+          },
+          {
+            "scope": [
+              "bible.ref.swconcord"
+            ],
+            "settings": {
+              "fontStyle": "",
+              "foreground": "#1180e8"
+            }
           }
         ]
       }
