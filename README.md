@@ -60,6 +60,12 @@ Continued making valid and invalid patterns checks more robust.
 - For principal phrase lines only use English phrase as pattern so refs get highlighted on these lines
 - Use bold for principal phrase rather than underline so spelling errors stand out.
 
+### 0.0.9
+
+- Fix semicolon after Bible verse (e.g.Isaiah 26:14;) being marked invalid.
+- Highlight Bible references.
+- Mark Bible verse number by themselves, like (verse 6), as invalid so full references will be used instead.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
