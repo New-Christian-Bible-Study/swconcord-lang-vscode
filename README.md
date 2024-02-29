@@ -60,7 +60,7 @@ Continued making valid and invalid patterns checks more robust.
 - For principal phrase lines only use English phrase as pattern so refs get highlighted on these lines
 - Use bold for principal phrase rather than underline so spelling errors stand out.
 
-### 0.0.9
+### 0.1.0
 
 - Fix semicolon after Bible verse (e.g.Isaiah 26:14;) being marked invalid.
 - Highlight Bible references.

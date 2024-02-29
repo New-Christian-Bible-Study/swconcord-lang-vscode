@@ -3,7 +3,7 @@
   "displayName": "Swedenborg Concordance Language",
   "description": "Syntax highlighting of Swedenborg Concordance text files",
   "icon": "icon.png",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "publisher": "new-christian-bible-study",
   "repository": {
     "type": "git",
