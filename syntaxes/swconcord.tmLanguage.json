@@ -72,7 +72,7 @@
 				},
 				{
 					"name": "invalid.bible.verse.ref.swconcord",
-					"match": "\\(verse \\d+\\)"
+					"match": "\\(verse (?!\\d+\\)).*?\\)"
 				},
 				{
 					"name": "invalid.char.unknown.swconcord",
