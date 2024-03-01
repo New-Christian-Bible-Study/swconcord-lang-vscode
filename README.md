@@ -66,6 +66,10 @@ Continued making valid and invalid patterns checks more robust.
 - Highlight Bible references.
 - Mark Bible verse number by themselves, like (verse 6), as invalid so full references will be used instead.
 
+### 0.1.1
+
+- Change so that (verse N) where N is any number is considered valid but verse followed by anything other than number is not valid.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
