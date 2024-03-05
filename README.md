@@ -70,6 +70,11 @@ Continued making valid and invalid patterns checks more robust.
 
 - Change so that (verse N) where N is any number is considered valid but verse followed by anything other than number is not valid.
 
+### 0.1.2
+
+- Update to account for abbrev Adversaria being used instead of WE
+- Don't mark a ")" after a reference as invalid
+
 ## Extension Development
 
 Development of the extension can be done as follows:
