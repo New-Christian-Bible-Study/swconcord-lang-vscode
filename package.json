@@ -65,6 +65,14 @@
           },
           {
             "scope": [
+              "principal.phrase.xref.swconcord"
+            ],
+            "settings": {
+              "foreground": "#9900ff"
+            }
+          },
+          {
+            "scope": [
               "ref.abbrev.swconcord"
             ],
             "settings": {
