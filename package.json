@@ -74,6 +74,15 @@
           },
           {
             "scope": [
+              "ref.canonsnc.swconcord"
+            ],
+            "settings": {
+              "fontStyle": "italic bold",
+              "foreground": "#1180e8"
+            }
+          },
+          {
+            "scope": [
               "bible.ref.swconcord"
             ],
             "settings": {
