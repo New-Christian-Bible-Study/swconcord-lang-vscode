@@ -61,7 +61,7 @@
 				},
 				{
 					"name": "principal.phrase.xref.swconcord",
-					"match": "See( ((also|and|under) )*(([A-Z][A-Za-z]*|\"[A-Z]([A-Za-z]*| |-|, )+\")(-([A-Za-z]*|\"[a-z]([a-z]*| |, )+\"))?)(;|,)?)+( at th(is|ese) reference(s)?)?\\."
+					"match": "(See|Under)( ((also|and|under) )*(([A-Z][A-Za-z]*|\"[A-Z]([A-Za-z]*| |-|, )+\")(-([A-Za-z]*|\"[a-z]([a-z]*| |, )+\"))?)(;|,)?)+( at th(is|ese) reference(s)?)?\\."
 				}
 			]
 		},
