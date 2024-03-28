@@ -75,6 +75,12 @@ Continued making valid and invalid patterns checks more robust.
 - Update to account for abbrev Adversaria being used instead of WE
 - Don't mark a ")" after a reference as invalid
 
+### 0.1.3
+
+- Highlight @CanonsNC differently from other abbreviations to indicate it shouldn't be modified
+- Add AngIdea as an abbreviation of "The Angelic Idea about the Creation of the Universe" at the end of Divine Wisdom
+- Highlight cross reference sentences starting with "See" or "Under"
+
 ## Extension Development
 
 Development of the extension can be done as follows:
