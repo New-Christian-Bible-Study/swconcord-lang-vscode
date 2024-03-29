@@ -81,6 +81,10 @@ Continued making valid and invalid patterns checks more robust.
 - Add AngIdea as an abbreviation of "The Angelic Idea about the Creation of the Universe" at the end of Divine Wisdom
 - Highlight cross reference sentences starting with "See" or "Under"
 
+### 0.1.4
+
+- Make Bible verse highlighting more robust
+
 ## Extension Development
 
 Development of the extension can be done as follows:
