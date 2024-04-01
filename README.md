@@ -85,6 +85,11 @@ Continued making valid and invalid patterns checks more robust.
 
 - Make Bible verse highlighting more robust
 
+### 0.1.5
+
+- Fix bug encountered making Bible verse highlighting more robust
+- When ":" before or after a number and it's not part of a Bible verse show as invalid
+
 ## Extension Development
 
 Development of the extension can be done as follows:
