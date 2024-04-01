@@ -97,11 +97,11 @@
 				},
 				{
 					"name": "invalid.non.digit.before.digit.swconcord",
-					"match": "[^ @\\d:\\(\\[]\\d+"
+					"match": "[^ @\\d\\(\\[]\\d+"
 				},
 				{
 					"name": "invalid.non.digit.after.digit.swconcord",
-					"match": "\\d+[^\\d\\.,:K \\[\\]\\)]"
+					"match": "\\d+[^\\d\\., \\[\\]\\)]"
 				},
 				{
 					"name": "invalid.letter.unexpected.swconcord",
