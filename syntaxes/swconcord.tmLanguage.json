@@ -56,6 +56,10 @@
 		"principal_phrases": {
 			"patterns": [
 				{
+					"name": "principal.phrase.xref.swconcord",
+					"match": "(See|Under)( ((also|and|or|under) )*(([A-Z][A-Za-z]*|\"[A-Z]([A-Za-z]*| |-|, )+\")(-([A-Za-z]*|\"[a-z]([a-z]*| |, )+\"))?)(;|,)?)+(( at th(is|ese) reference(s)?)| here)?\\."
+				},
+				{
 					"name": "principal.phrases.swconcord",
 					"match": "^([A-Z][A-Za-z| ,]+[a-z])\\. +(?!See)([A-Z][A-Za-z| ,]+[a-z])\\.",
 					"captures": {
@@ -82,10 +86,6 @@
 				{
 					"name": "principal_phrase_latin.swconcord",
 					"match": "[A-Z][A-Za-z| ]+[a-z]\\.$"
-				},
-				{
-					"name": "principal.phrase.xref.swconcord",
-					"match": "(See|Under)( ((also|and|or|under) )*(([A-Z][A-Za-z]*|\"[A-Z]([A-Za-z]*| |-|, )+\")(-([A-Za-z]*|\"[a-z]([a-z]*| |, )+\"))?)(;|,)?)+(( at th(is|ese) reference(s)?)| here)?\\."
 				}
 			]
 		},
