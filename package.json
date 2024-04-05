@@ -57,13 +57,21 @@
           },
           {
             "scope": [
-              "principal.phrase.line.swconcord"
+              "principal_phrase.english.swconcord"
             ],
             "settings": {
               "fontStyle": "bold"
             }
           },
           {
+            "scope": [
+              "principal_phrase.latin.swconcord"
+            ],
+            "settings": {
+              "fontStyle": "italic"
+            }
+          },
+              {
             "scope": [
               "principal.phrase.xref.swconcord"
             ],

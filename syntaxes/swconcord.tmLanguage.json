@@ -56,8 +56,32 @@
 		"principal_phrases": {
 			"patterns": [
 				{
-					"name": "principal.phrase.line.swconcord",
-					"match": "^(?!See)([A-Z].*?\\.)"
+					"name": "principal.phrases.swconcord",
+					"match": "^([A-Z][A-Za-z| ,]+[a-z])\\. +(?!See)([A-Z][A-Za-z| ,]+[a-z])\\.",
+					"captures": {
+						"1": {
+							"name": "principal_phrase.english.swconcord"
+						},
+						"2": {
+							"name": "principal_phrase.latin.swconcord"
+						}
+					}
+				},
+				{
+					"name": "principal.phrase.english.see.swconcord",
+					"match": "^([A-Z][A-Za-z| ,]+[a-z])\\. +(See) ([A-Za-z| ,]+[a-z])\\.",
+					"captures": {
+						"1": {
+							"name": "principal_phrase.english.swconcord"
+						},
+						"2": {
+							"name": "ref.see.also.swconcord"
+						}
+					}
+				},
+				{
+					"name": "principal_phrase_latin.swconcord",
+					"match": "[A-Z][A-Za-z| ]+[a-z]\\.$"
 				},
 				{
 					"name": "principal.phrase.xref.swconcord",
