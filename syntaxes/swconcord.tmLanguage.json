@@ -61,12 +61,12 @@
 				},
 				{
 					"name": "principal.phrases.swconcord",
-					"match": "^([A-Z][A-Za-z| ,]+[a-z])\\. +(?!See)([A-Z][A-Za-z| ,]+[a-z])\\.",
+					"match": "^([A-Z]+([A-Za-z]| |'|,|-|\\(|\\))*)[.!](( (?!(See|Under|The))([A-Z]+([A-Za-z]| |'|,|-|\\(|\\))*)[.!])*)",
 					"captures": {
 						"1": {
 							"name": "principal_phrase.english.swconcord"
 						},
-						"2": {
+						"3": {
 							"name": "principal_phrase.latin.swconcord"
 						}
 					}
