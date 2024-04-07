@@ -90,6 +90,13 @@ Continued making valid and invalid patterns checks more robust.
 - Fix bug encountered making Bible verse highlighting more robust
 - When ":" before or after a number and it's not part of a Bible verse show as invalid
 
+### 0.2.0
+
+- Add back shown Latin principal words in italic as was also done by Potts. This time the search pattern is more robust than the previous attempt.
+- Added support for subsections quarter and third, in addition to half.
+- Account for Adversaria sections that start with characters like 3/.
+- Don't show an error if a @<section-num> is followed by a ")".
+
 ## Extension Development
 
 Development of the extension can be done as follows:
