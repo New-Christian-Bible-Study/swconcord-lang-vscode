@@ -92,7 +92,7 @@ Continued making valid and invalid patterns checks more robust.
 
 ### 0.2.0
 
-- Add back shown Latin principal words in italic as was also done by Potts. This time the search pattern is more robust than the previous attempt.
+- Add back showing Latin principal words in italic as was also done by Potts. This time the search pattern is more robust than the previous attempt.
 - Added support for subsections quarter and third, in addition to half.
 - Account for Adversaria sections that start with characters like 3/.
 - Don't show an error if a @<section-num> is followed by a ")".
