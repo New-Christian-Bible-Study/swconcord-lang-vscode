@@ -100,6 +100,10 @@
 					"match": "\\d+\\[\\]"
 				},
 				{
+					"name": "invalid.principal_phrase_latin_missing.swconcord",
+					"match": "^(?!(See|Under))(([A-Za-z]| |'|,|-|\\(|\\))*)\\. *$"
+				},
+				{
 					"name": "invalid.ref.swconcord",
 					"match": "@(?!(--|((\\d\\/)?\\d+(-\\d+)?)|(5M|9Q|AC|AE|AngIdea|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|Adversaria|WHApp|WH) ((\\d\\/)?\\d+(-\\d+)?))(\\[(\\d+|end|quarter|third|half)\\])?(\\([a-z]{1,2}\\))?( |\\.|,|\\))).*? "
 				},
