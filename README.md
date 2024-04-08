@@ -97,6 +97,10 @@ Continued making valid and invalid patterns checks more robust.
 - Account for Adversaria sections that start with characters like 3/.
 - Don't show an error if a @<section-num> is followed by a ")".
 
+### 0.2.1
+
+- Mark as invalid lines missing principal Latin phrase
+
 ## Extension Development
 
 Development of the extension can be done as follows:
