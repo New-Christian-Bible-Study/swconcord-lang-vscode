@@ -135,6 +135,10 @@
 				{
 					"name": "invalid.letter.unexpected.swconcord",
 					"match": "(\\)\\w)|(\\w\\()|(\\?\\w)"
+				},
+				{
+					"name": "invalid.stray.char.swconcord",
+					"match": "\\s[b-z|\\?|,|:|;|\\.|!|'|\\*]\\s"
 				}
 			]
 		}
