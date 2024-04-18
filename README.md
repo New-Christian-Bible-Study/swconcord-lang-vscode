@@ -101,6 +101,12 @@ Continued making valid and invalid patterns checks more robust.
 
 - Mark as invalid lines missing principal Latin phrase
 
+### 0.2.2
+
+- Detect stray characters
+- Detect invalid word case changes
+- Make cross-reference expression more robust
+
 ## Extension Development
 
 Development of the extension can be done as follows:
