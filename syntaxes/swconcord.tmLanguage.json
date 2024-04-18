@@ -83,10 +83,6 @@
 							"name": "ref.see.also.swconcord"
 						}
 					}
-				},
-				{
-					"name": "principal_phrase_latin.swconcord",
-					"match": "[A-Z][A-Za-z| ]+[a-z]\\.$"
 				}
 			]
 		},
