@@ -13,6 +13,9 @@
 		},
 		{
 			"include": "#principal_phrases"
+		},
+		{
+			"include": "#latin_injected"
 		}
 	],
 	"repository": {
@@ -69,6 +72,19 @@
 						},
 						"4": {
 							"name": "principal_phrase.latin.swconcord"
+						}
+					}
+				}
+			]
+		},
+		"latin_injected": {
+			"patterns": [
+				{
+					"name": "latin.injected.region.swconcord",
+					"match": " -([A-Za-z]+)(- |\\.|;|')",
+					"captures": {
+						"1": {
+							"name": "latin.injected.swconcord"
 						}
 					}
 				}

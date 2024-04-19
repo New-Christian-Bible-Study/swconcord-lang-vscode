@@ -71,7 +71,7 @@
               "fontStyle": "italic"
             }
           },
-              {
+          {
             "scope": [
               "principal.phrase.xref.swconcord"
             ],
@@ -104,6 +104,14 @@
             "settings": {
               "fontStyle": "",
               "foreground": "#1180e8"
+            }
+          },
+          {
+            "scope": [
+              "latin.injected.swconcord"
+            ],
+            "settings": {
+              "fontStyle": "italic"
             }
           }
         ]
