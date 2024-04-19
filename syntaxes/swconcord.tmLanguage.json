@@ -71,7 +71,8 @@
 							"name": "principal_phrase.latin.swconcord"
 						}
 					}
-				}			]
+				}
+			]
 		},
 		"invalid": {
 			"patterns": [
