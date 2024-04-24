@@ -112,6 +112,10 @@ Continued making valid and invalid patterns checks more robust.
 - Show injected Latin words in italic
 - Make cross-reference expression more robust
 
+### 0.2.4
+
+- Make cross-reference expression more robust
+
 ## Extension Development
 
 Development of the extension can be done as follows:
