@@ -116,6 +116,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Make cross-reference expression more robust
 
+### 0.2.5
+
+- Extend highlighting for Latin injected region to allow for a Latin phrase to used in addition to just a word
+
 ## Extension Development
 
 Development of the extension can be done as follows:
