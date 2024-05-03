@@ -82,7 +82,7 @@
 				{
 					"name": "latin.injected.region.swconcord",
 					"comment": "This should match LatinInjectionsMarker.LATIN_INJECT_REGEX in repository swconcord-process file language.py except a space should be added after first ([A-Za-z]+)",
-					"match": " ([A-Za-z]+) -((([A-Za-z]+ )*[A-Za-z]+)(( ?- ?[A-Za-z]+)|[.?,;']))",
+					"match": "[ '(]([A-Za-z]+) -((([A-Za-z]+ )*[A-Za-z]+)(( ?- ?[A-Za-z]+)|[.?,;')]))",
 					"captures": {
 						"3": {
 							"name": "latin.injected.swconcord"
