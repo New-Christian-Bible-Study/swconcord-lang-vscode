@@ -95,7 +95,7 @@ Continued making valid and invalid patterns checks more robust.
 - Add back showing Latin principal words in italic as was also done by Potts. This time the search pattern is more robust than the previous attempt.
 - Added support for subsections quarter and third, in addition to half.
 - Account for Adversaria sections that start with characters like 3/.
-- Don't show an error if a @<section-num> is followed by a ")".
+- Don't show an error if a `@<section-num>` is followed by a `)`.
 
 ### 0.2.1
 
@@ -120,6 +120,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Extend highlighting for Latin injected region to allow for a Latin phrase to used in addition to just a word
 
+### 0.2.6
+
+- Fix injected Latin highlighting so English word can be after ' and ( in addition to a space
+
 ## Extension Development
 
 Development of the extension can be done as follows:
@@ -140,9 +144,8 @@ So that references to Swedenborg's works stand out, a keyword for each work abbr
 
 - An abbreviation whose beginning portion is the same as the beginning of another larger abbreviation needs to come after the larger abbreviation so that it won't be ignored. These abbreviations are
 
-    - LJCont
-    - LJPost
-    - LJ
-    - WHApp
-    - WH
-
+- LJCont
+- LJPost
+- LJ
+- WHApp
+- WH
