@@ -61,11 +61,11 @@
 				{
 					"name": "principal.phrase.xref.swconcord",
 					"comment": "See grammar/regex/xref-expression.py in repository swconcord-process which creates this regex from a template",
-					"match": "(See|Under) [a-z,; ()]*((([A-Z]([A-Za-z]|-[A-Za-z])*|\"[A-Z]([A-Za-z \\-'()]|, )+\")(-([A-Za-z]([A-Za-z]|-[A-Za-z])*|\"[A-Za-z]([A-Za-z \\-'()]|, )+\"))?)[,; ][a-z,; ()]* )*(([A-Z]([A-Za-z]|-[A-Za-z])*|\"[A-Z]([A-Za-z \\-'()]|, )+\")(-([A-Za-z]([A-Za-z]|-[A-Za-z])*|\"[A-Za-z]([A-Za-z \\-'()]|, )+\"))?)[a-z,; ()]*[@.]"
+					"match": "(See|Under|Continued) [a-z,; ()]*((([A-Z]([A-Za-z]|-[A-Za-z])*|\"[A-Z]([A-Za-z \\-'()]|, )+\")(-([A-Za-z]([A-Za-z]|-[A-Za-z])*|\"[A-Za-z]([A-Za-z \\-'()]|, )+\"))?)[,; ][a-z,; ()]* )*(([A-Z]([A-Za-z]|-[A-Za-z])*|\"[A-Z]([A-Za-z \\-'()]|, )+\")(-([A-Za-z]([A-Za-z]|-[A-Za-z])*|\"[A-Za-z]([A-Za-z \\-'()]|, )+\"))?)[a-z,; ()]*[@.]"
 				},
 				{
 					"name": "principal.phrases.swconcord",
-					"match": "^(?!(See|Under) )([A-Z]+([A-Za-z]| |'|,|-|\\(|\\))*)[.!](( (?!(See|Under|The))([A-Z]+([A-Za-z]| |'|,|-|\\(|\\))*)[.!])*)",
+					"match": "^(?!(See|Under|Continued) )([A-Z]+([A-Za-z]| |'|,|-|\\(|\\))*)[.!](( (?!(See|Under|Continued|The))([A-Z]+([A-Za-z]| |'|,|-|\\(|\\))*)[.!])*)",
 					"captures": {
 						"2": {
 							"name": "principal_phrase.english.swconcord"
@@ -103,7 +103,7 @@
 				},
 				{
 					"name": "invalid.principal_phrase_latin_missing.swconcord",
-					"match": "^(?!(See|Under))(([A-Za-z]| |'|,|-|\\(|\\))*)\\. *$"
+					"match": "^(?!(See|Under|Continued))(([A-Za-z]| |'|,|-|\\(|\\))*)\\. *$"
 				},
 				{
 					"name": "invalid.ref.swconcord",
