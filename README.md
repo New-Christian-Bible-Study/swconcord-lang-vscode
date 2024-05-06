@@ -124,6 +124,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Fix injected Latin highlighting so English word can be after ' and ( in addition to a space
 
+### 0.2.7
+
+- Add Continued to words that can begin a cross-reference sentence
+
 ## Extension Development
 
 Development of the extension can be done as follows:
