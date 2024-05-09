@@ -128,6 +128,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Add Continued to words that can begin a cross-reference sentence
 
+### 0.2.8
+
+- Made detection of invalid chars before and after digits more robust
+
 ## Extension Development
 
 Development of the extension can be done as follows:
