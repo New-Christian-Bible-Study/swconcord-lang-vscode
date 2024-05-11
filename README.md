@@ -132,6 +132,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Made detection of invalid chars before and after digits more robust
 
+### 0.2.9
+
+- Allow appending an a or b to a section number
+
 ## Extension Development
 
 Development of the extension can be done as follows:
