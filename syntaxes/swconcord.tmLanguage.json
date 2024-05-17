@@ -134,16 +134,36 @@
 					"match": "(?!(5M|2Kings))\\d(?!(st|nd|th|rd|\\d|a|b|\\.|:|;|,| |\\/|\\(|-|'|\\[|\\]|\\)))"
 				},
 				{
-					"name": "invalid.letter.unexpected.swconcord",
-					"match": "(\\)\\w)|(\\w\\()|(\\?\\w)"
+					"name": "invalid.char.unexpected.swconcord",
+					"match": "[\\)?!;*]\\w"
+				},
+				{
+					"name": "invalid.letter.after.period.swconcord",
+					"match": "(?<!i)\\.[A-Za-z]"
 				},
 				{
 					"name": "invalid.stray.char.swconcord",
 					"match": "\\s[b-z|\\?|,|:|;|\\.|!|'|\\*]\\s"
 				},
 				{
+					"name": "invalid.double.dash.unexpected.swconcord",
+					"match": "[^@]--"
+				},
+				{
 					"name": "invalid.word.case.unexpected.swconcord",
 					"match": "\\s([A-Z]+[a-z]+[A-Z]+|[a-z]+[A-Z])"
+				},
+				{
+					"name": "invalid.extra.space.swconcord",
+					"match": "\\s{2,}|\\s+$"
+				},
+				{
+					"name": "invalid.psalms.ref.swconcord",
+					"match": "Psalm (\\d+)"
+				},
+				{
+					"name": "invalid.general.article.swconcord",
+					"match": "\\(General article\\)"
 				}
 			]
 		}
