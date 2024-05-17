@@ -136,6 +136,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Allow appending an a or b to a section number
 
+### 0.3.0
+
+- Extend invalid checks
+
 ## Extension Development
 
 Development of the extension can be done as follows:
