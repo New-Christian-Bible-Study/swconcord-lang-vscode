@@ -131,7 +131,7 @@
 				},
 				{
 					"name": "invalid.non.digit.after.digit.swconcord",
-					"match": "(?!(5M|2Kings))\\d(?!(st|nd|th|rd|\\d|a|b|\\.|:|;|,| |\\/|\\(|-|'|\\[|\\]|\\)))"
+					"match": "(?!(5M|9Q|2Kings))\\d(?!(st|nd|th|rd|\\d|a|b|\\.|:|;|,| |\\/|\\(|-|'|\\[|\\]|\\)))"
 				},
 				{
 					"name": "invalid.char.unexpected.swconcord",
