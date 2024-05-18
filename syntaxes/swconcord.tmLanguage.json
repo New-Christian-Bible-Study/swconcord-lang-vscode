@@ -95,7 +95,7 @@
 			"patterns": [
 				{
 					"name": "invalid.line.beginning.swconcord",
-					"match": "^[^@[A-Z]#].*$"
+					"match": "^[^@A-Z#].*$"
 				},
 				{
 					"name": "invalid.subsection.empty.swconcord",
