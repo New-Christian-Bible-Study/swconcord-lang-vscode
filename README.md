@@ -140,6 +140,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Extend invalid checks
 
+### 0.3.1
+
+- Further extend invalid checks
+
 ## Extension Development
 
 Development of the extension can be done as follows:
