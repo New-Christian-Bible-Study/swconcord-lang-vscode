@@ -94,32 +94,28 @@
 		"invalid": {
 			"patterns": [
 				{
-					"name": "invalid.line.beginning.swconcord",
+					"name": "invalid.line.beginning.unexpected.swconcord",
 					"match": "^[^@A-Z#].*$"
 				},
 				{
-					"name": "invalid.subsection.empty.swconcord",
-					"match": "\\d+\\[\\]"
-				},
-				{
-					"name": "invalid.missing.latin.principal.phrase.swconcord",
-					"match": "^(?!(See|Under|Continued))(([A-Za-z]| |'|,|-|\\(|\\))*)\\. *$"
+					"name": "invalid.char.unexpected.after.at.sign.swconcord",
+					"match": "@(?!\\w|-)"
 				},
 				{
 					"name": "invalid.ref.malformed.swconcord",
 					"match": "@(?!(--|((\\d\\/)?\\d+[ab]?(-\\d+)?)|(5M|9Q|AC|AE|AngIdea|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|Adversaria|WHApp|WH) ((\\d\\/)?\\d+[ab]?(-\\d+)?))(\\[(\\d+|end|quarter|third|half)\\])?(\\([a-z]{1,2}\\))?( |\\.|,|\\))).*? "
 				},
 				{
-					"name": "invalid.bible.verse.ref.malformed.swconcord",
-					"match": "\\(verse (?!\\d+\\)).*?\\)"
+					"name": "invalid.work.reference.without.at.sign.swconcord",
+					"match": "(?<!@|[A-Z])(5M|9Q|AC|AE|AngIdea|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|Adversaria|WHApp|WH) \\d"
 				},
 				{
-					"name": "invalid.char.unknown.swconcord",
-					"match": "%"
+					"name": "invalid.section.reference.without.at.sign.swconcord",
+					"match": "\\. \\d+\\["
 				},
 				{
-					"name": "invalid.char.after.at.sign.swconcord",
-					"match": "@(?!\\w|-)"
+					"name": "invalid.subsection.empty.swconcord",
+					"match": "\\d+\\[\\]"
 				},
 				{
 					"name": "invalid.subsection.too.large.swconcord",
@@ -134,6 +130,38 @@
 					"match": "(?!(5M|9Q|2Kings))\\d(?!(st|nd|th|rd|\\d|a|b|\\.|:|;|,| |\\/|\\(|-|'|\\[|\\]|\\)))"
 				},
 				{
+					"name": "invalid.double.dash.unexpected.swconcord",
+					"match": "[^@]--"
+				},
+				{
+					"name": "invalid.bible.verse.ref.malformed.swconcord",
+					"match": "\\(verse (?!\\d+\\)).*?\\)"
+				},
+				{
+					"name": "invalid.psalms.ref.swconcord",
+					"match": "Psalm (\\d+)"
+				},
+				{
+					"name": "invalid.missing.latin.principal.phrase.swconcord",
+					"match": "^(?!(See|Under|Continued))(([A-Za-z]| |'|,|-|\\(|\\))*)\\. *$"
+				},
+				{
+					"name": "invalid.char.unknown.swconcord",
+					"match": "%"
+				},
+				{
+					"name": "invalid.lowercase.letter.unexpected.swconcord",
+					"match": "(?<!(?:\\.\\.|ig|tc|\\.e))\\. (?!etc)[a-z]"
+				},
+				{
+					"name": "invalid.space.between.periods.swconcord",
+					"match": "\\. \\."
+				},
+				{
+					"name": "invalid.equals.sign.not.between.spaces.swconcord",
+					"match": "[^ (]=|=[^ ]"
+				},
+				{
 					"name": "invalid.char.unexpected.swconcord",
 					"match": "[\\)?!;*]\\w"
 				},
@@ -146,20 +174,12 @@
 					"match": "\\s[b-z|\\?|,|:|;|\\.|!|'|\\*]\\s"
 				},
 				{
-					"name": "invalid.double.dash.unexpected.swconcord",
-					"match": "[^@]--"
-				},
-				{
 					"name": "invalid.word.case.unexpected.swconcord",
 					"match": "\\s([A-Z]+[a-z]+[A-Z]+|[a-z]+[A-Z])"
 				},
 				{
 					"name": "invalid.extra.space.swconcord",
 					"match": "\\s{2,}|\\s+$"
-				},
-				{
-					"name": "invalid.psalms.ref.swconcord",
-					"match": "Psalm (\\d+)"
 				},
 				{
 					"name": "invalid.general.article.swconcord",
