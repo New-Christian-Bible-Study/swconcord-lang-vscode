@@ -113,6 +113,14 @@
             "settings": {
               "fontStyle": "italic"
             }
+          },
+          {
+            "scope": [
+              "style.emphasis.swconcord"
+            ],
+            "settings": {
+              "fontStyle": "italic"
+            }
           }
         ]
       }

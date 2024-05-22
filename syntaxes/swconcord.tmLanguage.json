@@ -16,7 +16,11 @@
 		},
 		{
 			"include": "#latin_injected"
+		},
+		{
+			"include": "#styles"
 		}
+
 	],
 	"repository": {
 		"comments": {
@@ -88,6 +92,14 @@
 							"name": "latin.injected.swconcord"
 						}
 					}
+				}
+			]
+		},
+		"styles": {
+			"patterns": [
+				{
+					"name": "style.emphasis.swconcord",
+					"match": "_.*_"
 				}
 			]
 		},
