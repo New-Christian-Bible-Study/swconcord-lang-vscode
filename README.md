@@ -144,6 +144,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Further extend invalid checks
 
+### 0.3.2
+
+- When words have underscores on either side of them, then show in italic to indicate they're used for emphasis.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
