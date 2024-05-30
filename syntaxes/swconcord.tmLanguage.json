@@ -134,6 +134,10 @@
 					"match": "\\[\\d{3}\\]"
 				},
 				{
+					"name": "invalid.see.xref.first.principal.phrase.not.quoted.swconcord",
+					"match": "(See )([A-Z]\\w+)( (?!here)\\w+)([\\.,])"
+				},
+				{
 					"name": "invalid.non.digit.before.digit.swconcord",
 					"match": "[^ @\\d:\\-,'\\/\\(\\[]\\d+"
 				},
@@ -195,7 +199,7 @@
 				},
 				{
 					"name": "invalid.general.article.swconcord",
-					"match": "\\(General article\\)"
+					"match": "\\(General article\\.?\\)"
 				}
 			]
 		}
