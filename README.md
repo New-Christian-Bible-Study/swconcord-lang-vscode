@@ -154,6 +154,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Allow for a period following "General article" in the validation for this phrase.
 
+### 0.3.4
+
+- Adding grammar for individual cross-references, such as `<"Sake of, For the"-Propter>`. This allows a cross-reference to be marked as such when it's not part of a "See..." sentence.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
