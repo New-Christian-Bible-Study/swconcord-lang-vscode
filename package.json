@@ -73,9 +73,18 @@
           },
           {
             "scope": [
-              "principal.phrase.xref.swconcord"
+              "xref.sentence.swconcord"
             ],
             "settings": {
+              "foreground": "#9900ff"
+            }
+          },
+          {
+            "scope": [
+              "xref.swconcord"
+            ],
+            "settings": {
+              "fontStyle": "bold",
               "foreground": "#9900ff"
             }
           },

@@ -63,7 +63,7 @@
 		"principal_phrases": {
 			"patterns": [
 				{
-					"name": "principal.phrase.xref.swconcord",
+					"name": "xref.sentence.swconcord",
 					"comment": "See grammar/regex/xref-expression.py in repository swconcord-process which creates this regex from a template",
 					"match": "(See|Under|Continued) [a-z,; ()]*((([A-Z]([A-Za-z]|-[A-Za-z])*|\"[A-Z]([A-Za-z \\-'()]|, )+\")(-([A-Za-z]([A-Za-z]|-[A-Za-z])*|\"[A-Za-z]([A-Za-z \\-'()]|, )+\"))?)[,; ][a-z,; ()]* )*(([A-Z]([A-Za-z]|-[A-Za-z])*|\"[A-Z]([A-Za-z \\-'()]|, )+\")(-([A-Za-z]([A-Za-z]|-[A-Za-z])*|\"[A-Za-z]([A-Za-z \\-'()]|, )+\"))?)[a-z,; ()]*[@.]"
 				},
