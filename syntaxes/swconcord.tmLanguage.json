@@ -115,7 +115,7 @@
 				},
 				{
 					"name": "invalid.ref.malformed.swconcord",
-					"match": "@(?!(--|((\\d\\/)?\\d+[ab]?(-\\d+)?)|(5M|9Q|AC|AE|AngIdea|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|Adversaria|WHApp|WH) ((\\d\\/)?\\d+[ab]?(-\\d+)?))(\\[(\\d+|end|quarter|third|half)\\])?(\\([a-z]{1,2}\\))?( |\\.|,|\\))).*? "
+					"match": "@(?!(--|(\\d\\/)?\\d+[ab]?(-\\d+[ab]?)?|(5M|9Q|AC|AE|AngIdea|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|Adversaria|WHApp|WH) ((\\d\\/)?\\d+[ab]?(-\\d+)?))(\\[(\\d+|end|quarter|third|half)\\])?(\\([a-z]{1,2}\\))?[., )]).*? "
 				},
 				{
 					"name": "invalid.work.reference.without.at.sign.swconcord",
@@ -134,7 +134,15 @@
 					"match": "\\[\\d{3}\\]"
 				},
 				{
-					"name": "invalid.see.xref.first.principal.phrase.not.quoted.swconcord",
+					"name": "invalid.xref.malformed.swconcord",
+					"match": "<(?!(([A-Z]([A-Za-z]|-[A-Za-z])*|\"[A-Z]([A-Za-z \\-'()]|, )+\")(-([A-Za-z]([A-Za-z]|-[A-Za-z])*|\"[A-Za-z]([A-Za-z \\-'()]|, )+\"))?)>).*?[ ,.;\\n]"
+				},
+				{
+					"name": "xref.sentence.principal.phrase.with.two.capital.words.not.quoted",
+					"match": "([^']See )([^)@]*?)(?!(See|\"))([A-Z]\\w+ (of )?[A-Z]\\w+)([\\.,])"
+				},
+				{
+					"name": "invalid.xref.sentence.first.principal.phrase.not.quoted.swconcord",
 					"match": "(See )([A-Z]\\w+)( (?!here)\\w+)([\\.,])"
 				},
 				{
@@ -164,6 +172,10 @@
 				{
 					"name": "invalid.char.unknown.swconcord",
 					"match": "%"
+				},
+				{
+					"name": "invalid.one.letter.abbrev.not.converted.swconcord",
+					"match": "\\. [DEPW]\\."
 				},
 				{
 					"name": "invalid.lowercase.letter.unexpected.swconcord",
