@@ -158,6 +158,12 @@ Continued making valid and invalid patterns checks more robust.
 
 - Adding grammar for individual cross-references, such as `<"Sake of, For the"-Propter>`. This allows a cross-reference to be marked as such when it's not part of a "See..." sentence.
 
+### 0.3.5
+
+- Extend check for extra spaces to also include extra non-alphabet characters.
+
+- Check for missing opening or closing parenthesis.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
