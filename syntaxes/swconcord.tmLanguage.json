@@ -130,10 +130,6 @@
 					"match": "\\. \\d+\\["
 				},
 				{
-					"name": "invalid.subsection.empty.swconcord",
-					"match": "\\d+\\[\\]"
-				},
-				{
 					"name": "invalid.subsection.too.large.swconcord",
 					"match": "\\[\\d{3}\\]"
 				},
@@ -210,8 +206,12 @@
 					"match": "\\s([A-Z]+[a-z]+[A-Z]+|[a-z]+[A-Z])"
 				},
 				{
-					"name": "invalid.extra.space.swconcord",
-					"match": "\\s{2,}|\\s+$"
+					"name": "invalid.extra.character.swconcord",
+					"match": "(,{2,}|;{2,}|:{2,}|\\/{2,}|\\?{2,}|!{2,}|-{3,}|={2,}|\\({2,}|\\){2,}|_{2,}|'{2,}|\"{2,}|\\s{2,})| +$"
+				},
+				{
+					"name": "invalid.parenthesis.bracket.missing",
+					"match": "\\([^)]*$|^[^(]*\\)"
 				},
 				{
 					"name": "invalid.general.article.swconcord",
