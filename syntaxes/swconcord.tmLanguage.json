@@ -182,8 +182,12 @@
 					"match": "(?<!(?:\\.\\.|ig|tc|\\.e))\\. (?!etc)[a-z]"
 				},
 				{
-					"name": "invalid.space.between.periods.swconcord",
-					"match": "\\. \\."
+					"name": "invalid.space.between.chars.unexpected.swconcord",
+					"match": "[\\.!:\\-\\(] +[\\.!:\\)]"
+				},
+				{
+					"name": "invalid.adjacent.chars.unexpected.swconcord",
+					"match": "[!:\\-\\(][!:\\)]"
 				},
 				{
 					"name": "invalid.equals.sign.not.between.spaces.swconcord",
@@ -212,6 +216,10 @@
 				{
 					"name": "invalid.parenthesis.bracket.missing",
 					"match": "\\([^)]*$|^[^(]*\\)"
+				},
+				{
+					"name": "invalid.matching.quote.missing",
+					"match": "^([^']*'[^']|[^']*'[^']{3}|[^']*'[^']{5})$"
 				},
 				{
 					"name": "invalid.general.article.swconcord",
