@@ -214,12 +214,12 @@
 					"match": "(,{2,}|;{2,}|:{2,}|\\/{2,}|\\?{2,}|!{2,}|-{3,}|={2,}|\\({2,}|\\){2,}|_{2,}|'{2,}|\"{2,}|\\s{2,})| +$"
 				},
 				{
-					"name": "invalid.parenthesis.bracket.missing",
+					"name": "invalid.parenthesis.bracket.missing.swconcord",
 					"match": "\\([^)]*$|^[^(]*\\)"
 				},
 				{
-					"name": "invalid.matching.quote.missing",
-					"match": "^([^']*'[^']|[^']*'[^']{3}|[^']*'[^']{5})$"
+					"name": "invalid.matching.quotes.missing.swconcord",
+					"match": "^[^']*'(?!s)[^']*$|^([^']*'(?!s)[^']*){3}$"
 				},
 				{
 					"name": "invalid.general.article.swconcord",
