@@ -103,7 +103,7 @@
 			"patterns": [
 				{
 					"name": "style.emphasis.swconcord",
-					"match": "_.*_"
+					"match": "_.*?_"
 				}
 			]
 		},
