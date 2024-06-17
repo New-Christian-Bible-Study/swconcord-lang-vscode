@@ -151,7 +151,6 @@ Continued making valid and invalid patterns checks more robust.
 ### 0.3.3
 
 - Perform a check in cross-reference sentence for principal phrase missing quote. (Only the first cross-reference in the sentence is handled.)
-
 - Allow for a period following "General article" in the validation for this phrase.
 
 ### 0.3.4
@@ -161,8 +160,14 @@ Continued making valid and invalid patterns checks more robust.
 ### 0.3.5
 
 - Extend check for extra spaces to also include extra non-alphabet characters.
-
 - Check for missing opening or closing parenthesis.
+
+### 0.3.6
+
+- When emphasizing, match to next _, not last _ in line.
+- Extend check for space between periods to also include other chars
+- Check for unexpected adjacent chars.
+- Check for matching quote missing.
 
 ## Extension Development
 
