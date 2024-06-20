@@ -114,8 +114,8 @@
 		"invalid": {
 			"patterns": [
 				{
-					"name": "invalid.line.beginning.unexpected.swconcord",
-					"match": "^[^@A-Z#].*$"
+					"name": "invalid.line.unexpected.swconcord",
+					"match": "^(?!@|#|((?!(?:See|Under|Continued) )([A-Z][A-Za-z ',\\-()]*)[.!] (((?!(?:See|Under|Continued|The) )([A-Z][A-Za-z ',\\-()]*)[.!] ?)*))|(See|Under)).+"
 				},
 				{
 					"name": "invalid.char.unexpected.after.at.sign.swconcord",
