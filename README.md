@@ -169,6 +169,12 @@ Continued making valid and invalid patterns checks more robust.
 - Check for unexpected adjacent chars.
 - Check for matching quote missing.
 
+### 0.3.7
+
+- Made detection of principal phrase lines more robust
+- Made detection of unexpected lines more robust
+- Highlight text inside single quotes
+
 ## Extension Development
 
 Development of the extension can be done as follows:
