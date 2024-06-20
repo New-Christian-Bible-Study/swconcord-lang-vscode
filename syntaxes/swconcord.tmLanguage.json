@@ -73,12 +73,12 @@
 				},
 				{
 					"name": "principal.phrases.swconcord",
-					"match": "^(?!(See|Under|Continued) )([A-Z]+([A-Za-z]| |'|,|-|\\(|\\))*)[.!](( (?!(See|Under|Continued|The))([A-Z]+([A-Za-z]| |'|,|-|\\(|\\))*)[.!])*)",
+					"match": "^(?!(?:See|Under|Continued) )([A-Z][A-Za-z ',\\-()]*)[.!] (((?!(?:See|Under|Continued|The) )([A-Z][A-Za-z ',\\-()]*)[.!] ?)*)",
 					"captures": {
-						"2": {
+						"1": {
 							"name": "principal_phrase.english.swconcord"
 						},
-						"4": {
+						"2": {
 							"name": "principal_phrase.latin.swconcord"
 						}
 					}
@@ -104,6 +104,10 @@
 				{
 					"name": "style.emphasis.swconcord",
 					"match": "_.*?_"
+				},
+				{
+					"name": "style.quoted.swconcord",
+					"match": "'(?!s)[^']+'(?!s)"
 				}
 			]
 		},
