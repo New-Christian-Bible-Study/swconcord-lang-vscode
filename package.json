@@ -130,6 +130,14 @@
             "settings": {
               "fontStyle": "italic"
             }
+          },
+          {
+            "scope": [
+              "style.quoted.swconcord"
+            ],
+            "settings": {
+              "foreground": "#1180e8"
+            }
           }
         ]
       }
