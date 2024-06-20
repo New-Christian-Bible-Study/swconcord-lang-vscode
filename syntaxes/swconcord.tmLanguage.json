@@ -223,7 +223,7 @@
 				},
 				{
 					"name": "invalid.matching.quotes.missing.swconcord",
-					"match": "^[^']*'(?!s)[^']*$|^([^']*'(?!s)[^']*){3}$"
+					"match": "^[^']*'(?![st])[^']*$|^([^']*'(?![st])[^']*){3}$"
 				},
 				{
 					"name": "invalid.general.article.swconcord",
