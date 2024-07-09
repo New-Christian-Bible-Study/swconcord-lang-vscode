@@ -164,7 +164,7 @@ Continued making valid and invalid patterns checks more robust.
 
 ### 0.3.6
 
-- When emphasizing, match to next _, not last _ in line.
+- When emphasizing, match to next `_`, not last `_` in line.
 - Extend check for space between periods to also include other chars
 - Check for unexpected adjacent chars.
 - Check for matching quote missing.
@@ -174,6 +174,10 @@ Continued making valid and invalid patterns checks more robust.
 - Made detection of principal phrase lines more robust
 - Made detection of unexpected lines more robust
 - Highlight text inside single quotes
+
+### 0.3.8
+
+- Make a footnote a first-class concordance element
 
 ## Extension Development
 
