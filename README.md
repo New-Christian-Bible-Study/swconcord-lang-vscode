@@ -179,7 +179,7 @@ Continued making valid and invalid patterns checks more robust.
 
 - Make a footnote a first-class concordance element
 
-### 0.3.8.1
+### 0.3.9
 
 - Highlight footnote keyword
 
