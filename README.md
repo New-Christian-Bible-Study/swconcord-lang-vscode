@@ -179,6 +179,11 @@ Continued making valid and invalid patterns checks more robust.
 
 - Make a footnote a first-class concordance element
 
+### 0.3.8.1
+
+- Highlight footnote keyword
+
+
 ## Extension Development
 
 Development of the extension can be done as follows:
