@@ -115,7 +115,7 @@
 			"patterns": [
 				{
 					"name": "invalid.line.unexpected.swconcord",
-					"match": "^(?!@|#|((?!(?:See|Under|Continued) )([A-Z][A-Za-z ',\\-()]*)[.!] (((?!(?:See|Under|Continued|The) )([A-Z][A-Za-z ',\\-()]*)[.!] ?)*))|(See|Under)).+"
+					"match": "^(?!@|#|Footnote:|((?!(?:See|Under|Continued) )([A-Z][A-Za-z ',\\-()]*)[.!] (((?!(?:See|Under|Continued|The) )([A-Z][A-Za-z ',\\-()]*)[.!] ?)*))|(See|Under)).+"
 				},
 				{
 					"name": "invalid.char.unexpected.after.at.sign.swconcord",
@@ -207,7 +207,7 @@
 				},
 				{
 					"name": "invalid.stray.char.swconcord",
-					"match": "\\s[b-z|\\?|,|:|;|\\.|!|'|\\*]\\s"
+					"match": "\\s[b-z|\\?|,|:|;|\\.|!|']\\s"
 				},
 				{
 					"name": "invalid.word.case.unexpected.swconcord",
