@@ -125,7 +125,7 @@
 			"patterns": [
 				{
 					"name": "invalid.line.unexpected.swconcord",
-					"match": "^(?!@|#|Footnote:|((?!(?:See|Under|Continued) )([A-Z][A-Za-z ',\\-()]*)[.!] (((?!(?:See|Under|Continued|The) )([A-Z][A-Za-z ',\\-()]*)[.!] ?)*))|(See|Under)).+"
+					"match": "^(?!@|#|Footnote:|((?!(?:See|Under|Continued) )([A-Z][A-Za-z ',\\-()]*)[.!] (((?!(?:See|Under|Continued|The) )([A-Z][A-Za-z ',\\-()]*)[.!] ?)*))|(See|Under|Continued)).+"
 				},
 				{
 					"name": "invalid.char.unexpected.after.at.sign.swconcord",
@@ -165,7 +165,7 @@
 				},
 				{
 					"name": "invalid.non.digit.after.digit.swconcord",
-					"match": "(?!(5M|9Q|2Kings))\\d(?!(st|nd|th|rd|\\d|a|b|\\.|:|;|,| |\\/|\\(|-|'|\\[|\\]|\\)))"
+					"match": "(?!(5M|9Q|2Kings))\\d(?!(st|nd|th|rd|\\d|a|b|c|d|\\.|:|;|,| |\\/|\\(|-|'|\\[|\\]|\\)))"
 				},
 				{
 					"name": "invalid.double.dash.unexpected.swconcord",
@@ -197,11 +197,11 @@
 				},
 				{
 					"name": "invalid.space.between.chars.unexpected.swconcord",
-					"match": "[\\.!:\\-\\(] +[\\.!:\\)]"
+					"match": "[\\.!:\\(] +[\\.!:\\)]"
 				},
 				{
 					"name": "invalid.adjacent.chars.unexpected.swconcord",
-					"match": "[!:\\-\\(][!:\\)]"
+					"match": "[!:\\(][!:\\)-]"
 				},
 				{
 					"name": "invalid.equals.sign.not.between.spaces.swconcord",
@@ -213,11 +213,11 @@
 				},
 				{
 					"name": "invalid.letter.after.period.swconcord",
-					"match": "(?<!i)\\.[A-Za-z]"
+					"match": "(?<!i)\\.[A-Za-ln-rt-z]"
 				},
 				{
 					"name": "invalid.stray.char.swconcord",
-					"match": "\\s[b-z|\\?|,|:|;|\\.|!|']\\s"
+					"match": "\\s[b-df-hj-np-tv-z|\\?|,|:|;|\\.|!|']\\s"
 				},
 				{
 					"name": "invalid.word.case.unexpected.swconcord",
@@ -241,6 +241,7 @@
 				}
 			]
 		}
+
 	},
 	"scopeName": "source.swconcord"
 }
