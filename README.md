@@ -183,6 +183,9 @@ Continued making valid and invalid patterns checks more robust.
 
 - Highlight footnote keyword
 
+### 0.4.0
+
+- Various fixes to matching patterns.
 
 ## Extension Development
 
