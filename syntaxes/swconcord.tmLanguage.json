@@ -55,7 +55,7 @@
 				},
 				{
 					"name": "ref.abbrev.swconcord",
-					"match": "@(--|((\\d\\/)?\\d+[ab]?(-\\d+)?)|(5M|9Q|AC|AE|AngIdea|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|Adversaria|WHApp|WH) ((\\d\\/)?\\d+[ab]?(-\\d+)?))(\\[(\\d+|end|quarter|third|half)\\])?(\\([a-z]{1,2}\\))?( |\\.|,|\\))"
+					"match": "@(--|((\\d\\/)?\\d+[ab]?(-\\d+)?)|(5M|9Q|AC|AE|AngIdea|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SConf|SciaDoc|TCR|Adversaria|WE|WHApp|WH) ((\\d\\/)?\\d+[ab]?(-\\d+)?))(\\[(\\d+|end|quarter|third|half)\\])?(\\([a-z]{1,2}\\))?( |\\.|,|\\))"
 				},
 				{
 					"name": "bible.ref.swconcord",
@@ -100,10 +100,9 @@
 			"patterns": [
 				{
 					"name": "latin.injected.region.swconcord",
-					"comment": "This should match LatinInjectionsMarker.LATIN_INJECT_REGEX in repository swconcord-process file language.py except a space should be added after first ([A-Za-z]+)",
-					"match": "[ '(]([A-Za-z]+) -((([A-Za-z]+ )*[A-Za-z]+)(( ?- ?[A-Za-z]+)|[.?,;')]))",
+					"match": " -([a-zA-Z][^-]*?[a-zA-Z])(- |(-[!'&)*.,:;=?\\[\\]]))",
 					"captures": {
-						"3": {
+						"1": {
 							"name": "latin.injected.swconcord"
 						}
 					}
@@ -134,11 +133,11 @@
 				},
 				{
 					"name": "invalid.ref.malformed.swconcord",
-					"match": "@(?!(--|(\\d\\/)?\\d+[ab]?(-\\d+[ab]?)?|(5M|9Q|AC|AE|AngIdea|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|Adversaria|WHApp|WH) ((\\d\\/)?\\d+[ab]?(-\\d+)?))(\\[(\\d+|end|quarter|third|half)\\])?(\\([a-z]{1,2}\\))?[., )]).*? "
+					"match": "@(?!(--|(\\d\\/)?\\d+[ab]?(-\\d+[ab]?)?|(5M|9Q|AC|AE|AngIdea|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SConf|SciaDoc|TCR|Adversaria|WE|WHApp|WH) ((\\d\\/)?\\d+[ab]?(-\\d+)?))(\\[(\\d+|end|quarter|third|half)\\])?(\\([a-z]{1,2}\\))?[., )]).*? "
 				},
 				{
 					"name": "invalid.work.reference.without.at.sign.swconcord",
-					"match": "(?<!@|[A-Z])(5M|9Q|AC|AE|AngIdea|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Dicta Probantia|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SciaDoc|TCR|Adversaria|WHApp|WH) \\d"
+					"match": "(?<!@|[A-Z])(5M|9Q|AC|AE|AngIdea|AR|Ath|BE|CL|CanonsNC|Char|ConvAng|Coro|DFaith|DLW|DLife|DLord|DLove|DMin|DP|DSS|DWis|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|Docu|EU|EccHist|HH|HistCrea|ISB|Inv|LJCont|LJPost|LJ|Letters|NJHD|PP|SE|SConf|SciaDoc|TCR|Adversaria|WE|WHApp|WH) \\d"
 				},
 				{
 					"name": "invalid.section.reference.without.at.sign.swconcord",
