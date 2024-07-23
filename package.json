@@ -81,14 +81,6 @@
           },
           {
             "scope": [
-              "xref.sentence.swconcord"
-            ],
-            "settings": {
-              "foreground": "#9900ff"
-            }
-          },
-          {
-            "scope": [
               "xref.swconcord"
             ],
             "settings": {
