@@ -187,6 +187,11 @@ Continued making valid and invalid patterns checks more robust.
 
 - Various fixes to matching patterns.
 
+### 0.4.1
+
+- Allow c and d to follow section # in addition to a and b.
+- Update list of work abbreviations to match what's in swedenborg-works-info.csv.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
