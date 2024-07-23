@@ -55,7 +55,7 @@
 				},
 				{
 					"name": "ref.abbrev.swconcord",
-					"match": "@(--|((\\d\\/)?\\d+[ab]?(-\\d+)?)|(5M|9Q|AC|Adversaria|AE|AngIdea|AR|Ath|BE|CanonsNC|Char|CL|ConvAng|Coro|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|DFaith|DLife|DLord|DLove|DLW|DMin|Docu|DP|DSS|DWis|EccHist|EU|HH|HistCrea|IndexBiblicus|Inv|ISB|Letters|LJ|LJCont|LJPost|NJHD|PP|SchmidMarg|SciaDoc|SConf|SE|SEIndex1|SEIndex2|TCR|TCRAdd|WE|WH|WHApp) ((\\d\\/)?\\d+[ab]?(-\\d+)?))(\\[(\\d+|end|quarter|third|half)\\])?(\\([a-z]{1,2}\\))?( |\\.|,|\\))"
+					"match": "@(--|(\\d\\/)?\\d+[abcd]?(-\\d+[abcd]?)?|(5M|9Q|AC|Adversaria|AE|AngIdea|AR|Ath|BE|CanonsNC|Char|CL|ConvAng|Coro|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|DFaith|DLife|DLord|DLove|DLW|DMin|Docu|DP|DSS|DWis|EccHist|EU|HH|HistCrea|IndexBiblicus|Inv|ISB|Letters|LJ|LJCont|LJPost|NJHD|PP|SchmidMarg|SciaDoc|SConf|SE|SEIndex1|SEIndex2|TCR|TCRAdd|WE|WH|WHApp) ((\\d\\/)?\\d+[abcd]?(-\\d+[abcd]?)?))(\\[(\\d+|end|quarter|third|half)\\])?(\\([a-z]{1,2}\\))?[., )]"
 				},
 				{
 					"name": "bible.ref.swconcord",
@@ -128,7 +128,7 @@
 				},
 				{
 					"name": "invalid.ref.malformed.swconcord",
-					"match": "@(?!(--|(\\d\\/)?\\d+[ab]?(-\\d+[ab]?)?|(5M|9Q|AC|Adversaria|AE|AngIdea|AR|Ath|BE|CanonsNC|Char|CL|ConvAng|Coro|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|DFaith|DLife|DLord|DLove|DLW|DMin|Docu|DP|DSS|DWis|EccHist|EU|HH|HistCrea|IndexBiblicus|Inv|ISB|Letters|LJ|LJCont|LJPost|NJHD|PP|SchmidMarg|SciaDoc|SConf|SE|SEIndex1|SEIndex2|TCR|TCRAdd|WE|WH|WHApp) ((\\d\\/)?\\d+[ab]?(-\\d+)?))(\\[(\\d+|end|quarter|third|half)\\])?(\\([a-z]{1,2}\\))?[., )]).*? "
+					"match": "@(?!(--|(\\d\\/)?\\d+[abcd]?(-\\d+[abcd]?)?|(5M|9Q|AC|Adversaria|AE|AngIdea|AR|Ath|BE|CanonsNC|Char|CL|ConvAng|Coro|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|DFaith|DLife|DLord|DLove|DLW|DMin|Docu|DP|DSS|DWis|EccHist|EU|HH|HistCrea|IndexBiblicus|Inv|ISB|Letters|LJ|LJCont|LJPost|NJHD|PP|SchmidMarg|SciaDoc|SConf|SE|SEIndex1|SEIndex2|TCR|TCRAdd|WE|WH|WHApp) ((\\d\\/)?\\d+[abcd]?(-\\d+[abcd]?)?))(\\[(\\d+|end|quarter|third|half)\\])?(\\([a-z]{1,2}\\))?[., )]).*? "
 				},
 				{
 					"name": "invalid.work.reference.without.at.sign.swconcord",
