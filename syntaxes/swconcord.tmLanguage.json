@@ -112,7 +112,7 @@
 				},
 				{
 					"name": "style.quoted.swconcord",
-					"match": "'(?!s)[^']+'(?!s)"
+					"match": "\"[^\"]+\""
 				}
 			]
 		},
@@ -156,11 +156,11 @@
 				},
 				{
 					"name": "invalid.non.digit.before.digit.swconcord",
-					"match": "[^ @\\d:\\-,'\\/\\(\\[]\\d+"
+					"match": "[^ @\\d:\\-,'\"\\/\\(\\[]\\d+"
 				},
 				{
 					"name": "invalid.non.digit.after.digit.swconcord",
-					"match": "(?!(5M|9Q|2Kings))\\d(?!(st|nd|th|rd|\\d|a|b|c|d|\\.|:|;|,| |\\/|\\(|-|'|\\[|\\]|\\)))"
+					"match": "(?!(5M|9Q|2Kings))\\d(?!(st|nd|th|rd|\\d|a|b|c|d|\\.|:|;|,| |\\/|\\(|-|'|\"|\\[|\\]|\\)))"
 				},
 				{
 					"name": "invalid.double.dash.unexpected.swconcord",
@@ -212,7 +212,7 @@
 				},
 				{
 					"name": "invalid.stray.char.swconcord",
-					"match": "\\s[b-df-hj-np-tv-z|\\?|,|:|;|\\.|!|']\\s"
+					"match": "\\s[b-df-hj-np-tv-z|\\?|,|:|;|\\.|!|'|\"]\\s"
 				},
 				{
 					"name": "invalid.word.case.unexpected.swconcord",
@@ -228,7 +228,7 @@
 				},
 				{
 					"name": "invalid.matching.quotes.missing.swconcord",
-					"match": "^[^']*'(?![st])[^']*$|^([^']*'(?![st])[^']*){3}$"
+					"match": "^[^\"]*\"(?![st])[^\"]*$|^([^\"]*\"(?![st])[^\"]*){3}$"
 				},
 				{
 					"name": "invalid.general.article.swconcord",
@@ -236,7 +236,6 @@
 				}
 			]
 		}
-
 	},
 	"scopeName": "source.swconcord"
 }
