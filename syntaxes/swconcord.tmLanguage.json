@@ -167,10 +167,6 @@
 					"match": "[^@]--"
 				},
 				{
-					"name": "invalid.bible.verse.ref.malformed.swconcord",
-					"match": "\\(verse (?!\\d+\\)).*?\\)"
-				},
-				{
 					"name": "invalid.psalms.ref.swconcord",
 					"match": "Psalm (\\d+)"
 				},
