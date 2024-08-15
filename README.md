@@ -196,7 +196,7 @@ Continued making valid and invalid patterns checks more robust.
 
 - Updates to account for single quote changed to double quote for Bible quotes
 
-### 0.4.3
+### 0.4.4
 
 - Convert from subsections half, third, and quarter to decimal form (e.g. [1.2]).
 - Remove check for invalid Bible verses that resulted in too many false positives.
