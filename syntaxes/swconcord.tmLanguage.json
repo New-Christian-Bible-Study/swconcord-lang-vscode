@@ -109,10 +109,6 @@
 				{
 					"name": "style.emphasis.swconcord",
 					"match": "_.*?_"
-				},
-				{
-					"name": "style.quoted.swconcord",
-					"match": "\"[^\"]+\""
 				}
 			]
 		},

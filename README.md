@@ -201,6 +201,10 @@ Continued making valid and invalid patterns checks more robust.
 - Convert from subsections half, third, and quarter to decimal form (e.g. [1.2]).
 - Remove check for invalid Bible verses that resulted in too many false positives.
 
+### 0.4.5
+
+- Disable highlighting of quotes so that highlighting of injected Latin will done inside the quotes.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
