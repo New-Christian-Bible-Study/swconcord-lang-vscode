@@ -205,6 +205,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Disable highlighting of quotes so that highlighting of injected Latin will done inside the quotes.
 
+### 0.4.6
+
+- Remove works no longer being referenced.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
