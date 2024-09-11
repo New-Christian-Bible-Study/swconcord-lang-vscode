@@ -116,7 +116,7 @@
 			"patterns": [
 				{
 					"name": "invalid.line.unexpected.swconcord",
-					"match": "^(?!@|#|Footnote:|((?!(?:See|Under|Continued) )([A-Z][A-Za-z ',\\-()]*)[.!] (((?!(?:See|Under|Continued|The) )([A-Z][A-Za-z ',\\-()]*)[.!] ?)*))|(See|Under|Continued)).+"
+					"match": "^(?!@|#|(\\p{Lu}[\\p{L} ',\\-()]*[.!?])|(?:(?:See|Under|Continued) )|Footnote).+"
 				},
 				{
 					"name": "invalid.char.unexpected.after.at.sign.swconcord",
@@ -124,11 +124,11 @@
 				},
 				{
 					"name": "invalid.ref.malformed.swconcord",
-					"match": "@(?!(--|(\\d\\/)?\\d+[abcd]?(-\\d+[abcd]?)?|(5M|9Q|AC|AE|AR|Ath|BE|CanonsNC|Char|CL|ConvAng|Coro|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|DFaith|DLife|DLord|DLove|DLW|DMin|Docu|DP|DSS|DWis|EccHist|EU|HH|HistCrea|IndexBiblicus|Inv|ISB|Letters|LJ|LJCont|LJPost|NJHD|PP|SchmidMarg|SciaDoc|SConf|SE|SEIndex1|SEIndex2|TCR|TCRAdd|WE|WH|WHApp) ((\\d\\/)?\\d+[abcd]?(-\\d+[abcd]?)?))(\\[(\\d+(\\.\\d)?|end)\\])?(\\([a-z]{1,2}\\))?[., )]).*? "
+					"match": "@(?!(--|(\\d\\/)?\\d+[abcd]?(-\\d+[abcd]?)?|(5M|9Q|AC|ACIndex1|AE|AR|Ath|BE|CanonsNC|Char|CL|ConvAng|Coro|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|DFaith|DLife|DLord|DLove|DLW|DMin|Docu|DP|DSS|DWis|EccHist|EU|HH|HistCrea|IndexBiblicus|Inv|ISB|Letters|LJ|LJCont|LJPost|MarriageInd1|MarriageInd2|NJHD|PP|SchmidMarg|SciaDoc|SConf|SE|SEIndex1|SEIndex2|TCR|TCRAdd|WE|WH|WHApp|WLG) ((\\d\\/)?\\d+[abcd]?(-\\d+[abcd]?)?))(\\[(\\d+(\\.\\d)?|end)\\])?(\\([a-z]{1,2}\\))?[., )]).*? "
 				},
 				{
 					"name": "invalid.work.reference.without.at.sign.swconcord",
-					"match": "(?<!@|[A-Z])(5M|9Q|AC|Adversaria|AE|AngIdea|AR|Ath|BE|CanonsNC|Char|CL|ConvAng|Coro|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|DFaith|DLife|DLord|DLove|DLW|DMin|Docu|DP|DSS|DWis|EccHist|EU|HH|HistCrea|IndexBiblicus|Inv|ISB|Letters|LJ|LJCont|LJPost|NJHD|PP|SchmidMarg|SciaDoc|SConf|SE|SEIndex1|SEIndex2|TCR|TCRAdd|WE|WH|WHApp) \\d"
+					"match": "(?<!@|[A-Z])(5M|9Q|AC|ACIndex1|AE|AR|Ath|BE|CanonsNC|Char|CL|ConvAng|Coro|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|DFaith|DLife|DLord|DLove|DLW|DMin|Docu|DP|DSS|DWis|EccHist|EU|HH|HistCrea|IndexBiblicus|Inv|ISB|Letters|LJ|LJCont|LJPost|MarriageInd1|MarriageInd2|NJHD|PP|SchmidMarg|SciaDoc|SConf|SE|SEIndex1|SEIndex2|TCR|TCRAdd|WE|WH|WHApp|WLG) \\d"
 				},
 				{
 					"name": "invalid.section.reference.without.at.sign.swconcord",
@@ -159,6 +159,10 @@
 					"match": "(?!(5M|9Q|2Kings))\\d(?!(st|nd|th|rd|\\d|a|b|c|d|\\.|:|;|,| |\\/|\\(|-|'|\"|\\[|\\]|\\)))"
 				},
 				{
+					"name": "invalid.unexpected.line.ending.swconcord",
+					"match": "^[^#].*[^\\.\\?!\\)\"\\]\\*]$"
+				},
+				{
 					"name": "invalid.double.dash.unexpected.swconcord",
 					"match": "[^@]--"
 				},
@@ -183,10 +187,6 @@
 					"match": "(?<!(?:\\.\\.|ig|tc|\\.e))\\. (?!etc)[f-z]"
 				},
 				{
-					"name": "invalid.space.between.chars.unexpected.swconcord",
-					"match": "[\\.!:\\(] +[\\.!:\\)]"
-				},
-				{
 					"name": "invalid.adjacent.chars.unexpected.swconcord",
 					"match": "[!:\\(][!:\\)-]"
 				},
@@ -197,10 +197,6 @@
 				{
 					"name": "invalid.char.unexpected.swconcord",
 					"match": "[\\)?!;*]\\w"
-				},
-				{
-					"name": "invalid.letter.after.period.swconcord",
-					"match": "(?<!i)\\.[A-Za-ln-rt-z]"
 				},
 				{
 					"name": "invalid.stray.char.swconcord",
