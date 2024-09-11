@@ -71,7 +71,7 @@
 			"patterns": [
 				{
 					"name": "principal.phrases.swconcord",
-					"match": "^(?!(?:See|Under|Continued) )([A-Z][A-Za-z ',\\-()]*)[.!] (((?!(?:See|Under|Continued|The) )([A-Z][A-Za-z ',\\-()]*)[.!] ?)*)",
+					"match": "^(?!(?:See|Under|Continued) )([A-Z][A-Za-z ',\\-()]*)[.!]( ((?!(?:See|Under|Continued|The) )([A-Z][A-Za-z ',\\-()]*)[.!] ?)*)?",
 					"captures": {
 						"1": {
 							"name": "principal_phrase.english.swconcord"
@@ -160,7 +160,7 @@
 				},
 				{
 					"name": "invalid.unexpected.line.ending.swconcord",
-					"match": "^[^#].*[^\\.\\?!\\)\"\\]\\*]$"
+					"match": "^[^#].*[^\\.\\?!\\)\"\\]\\*\\n]$"
 				},
 				{
 					"name": "invalid.double.dash.unexpected.swconcord",
@@ -169,10 +169,6 @@
 				{
 					"name": "invalid.psalms.ref.swconcord",
 					"match": "Psalm (\\d+)"
-				},
-				{
-					"name": "invalid.missing.latin.principal.phrase.swconcord",
-					"match": "^(?!(See|Under|Continued))(([A-Za-z]| |'|,|-|\\(|\\))*)\\. *$"
 				},
 				{
 					"name": "invalid.char.unknown.swconcord",
