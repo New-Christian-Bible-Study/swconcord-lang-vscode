@@ -209,6 +209,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Remove works no longer being referenced.
 
+### 0.4.7
+
+- Update validation checks
+
 ## Extension Development
 
 Development of the extension can be done as follows:
