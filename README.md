@@ -211,7 +211,11 @@ Continued making valid and invalid patterns checks more robust.
 
 ### 0.4.7
 
-- Update validation checks
+- Update validation checks.
+
+### 0.4.8
+
+- Account for update of PPEs being separated by PPLs using a semicolon.
 
 ## Extension Development
 
