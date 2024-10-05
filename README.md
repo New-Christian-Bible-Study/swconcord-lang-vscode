@@ -217,6 +217,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Account for update of PPEs being separated by PPLs using a semicolon.
 
+### 0.4.9
+
+- Fix so Latin injections are always marked.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
