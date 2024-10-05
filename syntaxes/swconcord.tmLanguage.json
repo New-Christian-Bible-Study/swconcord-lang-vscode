@@ -95,7 +95,7 @@
 			"patterns": [
 				{
 					"name": "latin.injected.region.swconcord",
-					"match": " -([a-zA-Z][^-]*?[a-zA-Z])(- |(-[!'&)*.,:;=?\\[\\]]))",
+					"match": " -([a-zA-Z][^-]*?[a-zA-Z])-",
 					"captures": {
 						"1": {
 							"name": "latin.injected.swconcord"
