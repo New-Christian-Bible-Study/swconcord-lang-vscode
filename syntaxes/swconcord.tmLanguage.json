@@ -71,7 +71,7 @@
 			"patterns": [
 				{
 					"name": "principal.phrases.swconcord",
-					"match": "^(?!(?:See|Under|Continued) )((?:[A-Z][A-Za-z ',\\-()]*[.!?] ?)+)(?:;((?: (?!(?:See|Under|Continued) )(?:[A-Z][A-Za-z ',\\-()]*)[.!?])*))?",
+					"match": "^(?!(?:See|Under|Continued) )((?:[A-Z][A-Za-z0-9 ',\\-()]*[.!?] ?)+)(?:;((?: (?!(?:See|Under|Continued) )(?:[A-Z][A-Za-z0-9 ',\\-()]*)[.!?])*))?",
 					"captures": {
 						"1": {
 							"name": "principal_phrase.english.swconcord"
@@ -116,7 +116,7 @@
 			"patterns": [
 				{
 					"name": "invalid.line.unexpected.swconcord",
-					"match": "^(?!@|#|(\\p{Lu}[\\p{L} ',\\-()]*[.!?])|(?:(?:See|Under|Continued) )|Footnote).+"
+					"match": "^(?!@|#|(\\p{Lu}[\\p{L}0-9 ',\\-()]*[.!?])|(?:(?:See|Under|Continued) )|Footnote).+"
 				},
 				{
 					"name": "invalid.char.unexpected.after.at.sign.swconcord",
