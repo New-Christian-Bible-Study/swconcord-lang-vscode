@@ -221,6 +221,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Fix so Latin injections are always marked.
 
+### 0.5.0
+
+- Allow numbers to be included in principal phrase.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
