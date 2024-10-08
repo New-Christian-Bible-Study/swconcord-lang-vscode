@@ -225,6 +225,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Allow numbers to be included in principal phrase.
 
+### 0.5.1
+
+- In cross-references show Latin in italic.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
