@@ -81,10 +81,19 @@
           },
           {
             "scope": [
-              "xref.swconcord"
+              "xref.english.swconcord"
             ],
             "settings": {
               "fontStyle": "bold",
+              "foreground": "#9900ff"
+            }
+          },
+          {
+            "scope": [
+              "xref.latin.swconcord"
+            ],
+            "settings": {
+              "fontStyle": "italic",
               "foreground": "#9900ff"
             }
           },
