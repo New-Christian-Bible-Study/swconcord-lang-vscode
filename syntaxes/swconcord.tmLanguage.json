@@ -151,16 +151,8 @@
 					"match": "<(?!(((?:\\p{Lu}[\\p{L}0-9',() ]*|(?:\"\\p{Lu}(?:[\\p{L}0-9',() \\-])+\")))(?:(-(?:\\p{L}[\\p{L}0-9',() ]*|(?:\"\\p{L}(?:[\\p{L}0-9',() \\-])+\"))))?)>)"
 				},
 				{
-					"name": "xref.sentence.principal.phrase.with.two.capital.words.not.quoted",
-					"match": "([^']See )([^)@]*?)(?!(See|\"))([A-Z]\\w+ (of )?[A-Z]\\w+)([\\.,])"
-				},
-				{
-					"name": "invalid.xref.sentence.first.principal.phrase.not.quoted.swconcord",
-					"match": "(See )([A-Z]\\w+)( (?!here)\\w+)([\\.,])"
-				},
-				{
 					"name": "invalid.non.digit.before.digit.swconcord",
-					"match": "[^ @\\d:\\-,'\"\\/\\(\\[.]\\d+"
+					"match": "[^ xd@\\d:\\-,'\"\\/\\(\\[.]\\d+"
 				},
 				{
 					"name": "invalid.non.digit.after.digit.swconcord",
@@ -168,7 +160,7 @@
 				},
 				{
 					"name": "invalid.unexpected.line.ending.swconcord",
-					"match": "^[^#].*[^\\.\\?!\\)\"\\]\\*\\n]$"
+					"match": "^[^#].*[^\\.\\?!\\)\"\\]\\* \\n]$"
 				},
 				{
 					"name": "invalid.double.dash.unexpected.swconcord",
@@ -183,16 +175,8 @@
 					"match": "%"
 				},
 				{
-					"name": "invalid.one.letter.abbrev.not.converted.swconcord",
-					"match": "\\. [DEPW]\\."
-				},
-				{
-					"name": "invalid.lowercase.letter.unexpected.swconcord",
-					"match": "(?<!(?:\\.\\.|ig|tc|\\.e))\\. (?!etc)[f-z]"
-				},
-				{
 					"name": "invalid.adjacent.chars.unexpected.swconcord",
-					"match": "[!:\\(][!:\\)-]"
+					"match": "[!:][!:\\)-]"
 				},
 				{
 					"name": "invalid.equals.sign.not.between.spaces.swconcord",
@@ -204,7 +188,7 @@
 				},
 				{
 					"name": "invalid.stray.char.swconcord",
-					"match": "\\s[b-df-hj-np-tv-z|\\?|,|:|;|\\.|!|'|\"]\\s"
+					"match": "\\s[b-df-hj-np-tv-xz|\\?|,|:|;|\\.|!|'|\"]\\s"
 				},
 				{
 					"name": "invalid.word.case.unexpected.swconcord",
