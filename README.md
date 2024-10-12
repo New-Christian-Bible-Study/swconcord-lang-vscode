@@ -229,6 +229,11 @@ Continued making valid and invalid patterns checks more robust.
 
 - In cross-references show Latin in italic.
 
+### 0.5.2
+
+- Update validation patterns to match what's used for the typo report.
+- Don't highlight book of the Bible if it's not followed by a chapter number.
+
 ## Extension Development
 
 Development of the extension can be done as follows:
