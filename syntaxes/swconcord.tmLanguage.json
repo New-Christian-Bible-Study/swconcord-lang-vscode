@@ -49,11 +49,6 @@
 		"references": {
 			"patterns": [
 				{
-					"comment": "Highlight differently from other abbreviations to indicate it shouldn't be modified",
-					"name": "ref.canonsnc.swconcord",
-					"match": "@CanonsNC"
-				},
-				{
 					"name": "ref.abbrev.swconcord",
 					"match": "@(--|(\\d\\/)?\\d+[abcd]?(-\\d+[abcd]?)?|(5M|9Q|AC|AE|AR|Ath|BE|CanonsNC|Char|CL|ConvAng|Coro|DeConj|DeConsum|DeDeoSalv|DeDomino|DeInfluxus|DeJust|DeMiraculis|DeVerbo|DFaith|DLife|DLord|DLove|DLW|DMin|Docu|DP|DSS|DWis|EccHist|EU|HH|HistCrea|IndexBiblicus|Inv|ISB|Letters|LJ|LJCont|LJPost|NJHD|PP|SchmidMarg|SciaDoc|SConf|SE|SEIndex1|SEIndex2|TCR|TCRAdd|WE|WH|WHApp) ((\\d\\/)?\\d+[abcd]?(-\\d+[abcd]?)?))(\\[(\\d+(\\.\\d)?|end)\\])?(\\([a-z]{1,2}\\))?[., )]"
 				},
