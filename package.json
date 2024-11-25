@@ -129,7 +129,8 @@
               "latin.injected.swconcord"
             ],
             "settings": {
-              "fontStyle": "italic"
+              "fontStyle": "italic",
+              "foreground": "#d3d3d3"
             }
           },
           {
