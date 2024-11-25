@@ -234,6 +234,10 @@ Continued making valid and invalid patterns checks more robust.
 - Update validation patterns to match what's used for the typo report.
 - Don't highlight book of the Bible if it's not followed by a chapter number.
 
+### 0.5.3
+
+- Use light gray foreground for Latin injections to help make a distinction with emphasized words
+
 ## Extension Development
 
 Development of the extension can be done as follows:
