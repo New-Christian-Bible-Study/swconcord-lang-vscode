@@ -238,6 +238,10 @@ Continued making valid and invalid patterns checks more robust.
 
 - Use light gray foreground for Latin injections to help make a distinction with emphasized words
 
+### 0.5.4
+
+- Add work abbreviation ConvCalvin
+
 ## Extension Development
 
 Development of the extension can be done as follows:
